@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Barlow', sans-serif !important;
+  text-align: center;
+}
+
+.container {
+  padding: 20px 0
+}
+
+.home {
+  width: 250px;
+  margin-top: 75px;
+}
+
+.content {
+  border: 0;
+}
+
+.content.secondary {
+  background-color: transparent !important;
+}
+
+.row {
+  max-width: 95rem;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.search > input[type="text"]{
+  width: 40%;
+  min-width: 170px;
+}
+
+input[type="Submit"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem;
+  width: 120px;
+  padding: .85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid #1779ba;
+  border-radius: 0;
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  font-size: .9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #1779ba;
+  color: #fefefe;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+input[type="submit"]:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+
+input[type="text"] {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-weight: bold !important;
+  margin: 0 0 1rem;
+  padding: 1.85em 1em;
+  font-size: 18px;
+}
+
+input[type="text"]:hover {
+  cursor: pointer;
+}
+
+.logo img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 20vh;
+}
+
+select {
+  text-transform: capitalize;
+  border-radius: 6px;
+}
+
+.button {
+  font-weight: bold !important;
+  border-radius: 6px;
+}
+
+.loader {
+  text-align: center;
+  padding: 40px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.p-15 {
+  padding: 0 15px;
+  margin: auto;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 5px !important;
+  border: 0 !important;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 2rem !important;
+  min-height: 350px;
+  height: 500px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.card img {
+  right: 0; bottom: 0;
+  background-position: bottom !important;
+   width: 100%;
+  animation: fadein 2.5s;
+  -moz-animation: fadein 2.5s; /* Firefox */
+  -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+  -o-animation: fadein 2.5s; /* Opera */
+}
+
+.card:hover {
+  cursor: pointer !important;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.card-divider {
+  font-weight: bold;
+  background-color: #000;
+  font-size: 16px !important;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  position: absolute; bottom: 0;
+  display: none;
+}
+
+.card:hover .card-divider {
+  display: block;
+  animation: fadein 0.5s;
+  -moz-animation: fadein 0.5s; /* Firefox */
+  -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+  -o-animation: fadein 0.5s; /* Opera */
+}
+
+.card-divider h2 {
+  padding-top: 50%;
+}
+
+.card-divider p {
+  font-size: 20px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .movie {
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .movie {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .movie {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
